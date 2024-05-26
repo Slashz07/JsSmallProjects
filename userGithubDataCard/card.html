@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li{
+      list-style: none;
+      padding: 1rem;
+    }
+    #url{
+      margin-left: 5px;
+    }
+    #submitBtn{
+      border-radius: 10px;
+      font-size: 14px;
+      padding: 3px 8px;
+    }
+    #parent {
+    width: 30vw;
+    margin: auto;
+    padding: 15px;
+    background-color: black;
+    display: none;
+    }
+    img{
+      width: 100%;
+    }
+    #card{
+      background-color: grey;
+    }
+    #userInfo{
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <ul>
+      <li> <label for="url">Enter github user api url to access their info : </label>
+        <input type="text" id="url" placeholder="Enter URL"></li>
+      <li> <input type="checkbox" id="image">
+        <label for="image">Image</label></li>
+      <li> <input type="checkbox" id="name">
+        <label for="name">Name</label></li>
+      <li> <input type="checkbox" id="followers">
+        <label for="followers">Followers</label></li>
+      <li>
+        <input type="submit" id="submitBtn">
+      </li>
+    </ul>
+  </form>
+  <div id="parent">
+    <div id="card">
+      <div id="img"></div>
+      <div id="userInfo"></div>
+    </div>
+  </div>
+</body>
+<script src="card.js"></script>
+
+</html>
